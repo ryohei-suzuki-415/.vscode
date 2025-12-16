@@ -1,0 +1,66 @@
+{
+  // =====================================================
+  // VS Code 推奨拡張機能（参考用）
+  // このリストは、作成者が現在使用している拡張機能を
+  // そのまま列挙したものです。
+  //
+  // ※ すべてをインストールする必要はありません
+  // =====================================================
+
+  "recommendations": [
+    // --- プロジェクト / 管理 ---
+    "alefragnani.project-manager",
+
+    // --- Markdown / ドキュメント ---
+    "bierner.markdown-mermaid",
+    "davidanson.vscode-markdownlint",
+    "yzane.markdown-pdf",
+    "yzhang.markdown-all-in-one",
+    "marp-team.marp-vscode",
+    "tomoki1207.pdf",
+
+    // --- コード品質 / フォーマット ---
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+
+    // --- Git / コラボレーション ---
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "github.vscode-pull-request-github",
+    "ms-vsliveshare.vsliveshare",
+
+    // --- GitHub Copilot ---
+    // ※ 有料 / 個人契約が必要
+    "github.copilot",
+    "github.copilot-chat",
+
+    // --- 開発支援 ---
+    "formulahendry.auto-rename-tag",
+    "formulahendry.code-runner",
+    "oderwat.indent-rainbow",
+    "mechatroner.rainbow-csv",
+    "rangav.vscode-thunder-client",
+    "ritwickdey.liveserver",
+
+    // --- 図・設計 ---
+    "hediet.vscode-drawio",
+
+    // --- コンテナ / リモート開発 ---
+    "ms-azuretools.vscode-docker",
+    "ms-azuretools.vscode-containers",
+    "ms-vscode-remote.remote-containers",
+    "ms-vscode-remote.remote-ssh",
+    "ms-vscode-remote.remote-ssh-edit",
+    "ms-vscode-remote.remote-wsl",
+    "ms-vscode.remote-explorer",
+
+    // --- その他 ---
+    "splunk.splunk",
+    "ms-ceintl.vscode-language-pack-ja",
+    "pkief.material-icon-theme"
+  ],
+
+  // このワークスペースでは推奨しない拡張機能
+  "unwantedRecommendations": []
+}
