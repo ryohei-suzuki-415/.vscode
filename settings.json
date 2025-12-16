@@ -1,0 +1,131 @@
+{
+  // =====================================================
+  // Explorer（ファイル操作・ツリー表示）
+  // =====================================================
+
+  // ドラッグ＆ドロップ時の確認ダイアログを表示しない
+  // → ファイル整理を高速化（Git管理前提）
+  "explorer.confirmDragAndDrop": false,
+
+  // ネイティブクリップボード貼り付け時の確認を無効化
+  // → 画像・ファイル貼り付けのワンクッションを省略
+  "explorer.confirmPasteNative": false,
+
+  // 削除時の確認ダイアログを無効化
+  // → 履歴（Git）で戻せる前提
+  "explorer.confirmDelete": false,
+
+  // フォルダーの自動折りたたみを無効化
+  // → 階層構造を常に把握したい場合に有効
+  "explorer.compactFolders": false,
+
+  // =====================================================
+  // Workbench（UI・レイアウト）
+  // =====================================================
+
+  // エクスプローラーのツリー表示インデント幅（px）
+  // → 視認性重視で少し広め
+  "workbench.tree.indent": 20,
+
+  // アクティビティバー（左のアイコン列）を上部に配置
+  // → 画面横幅を節約したい人向け
+  "workbench.activityBar.location": "top",
+
+  // セカンダリサイドバー（右側パネル）を常に表示
+  // → Outline / Chat / Copilot 等をすぐ確認できる
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+
+  // アイコンテーマ（ファイル種別を直感的に識別）
+  "workbench.iconTheme": "material-icon-theme",
+
+  // =====================================================
+  // Editor（入力・補完・フォーマット）
+  // =====================================================
+
+  // Tabキーで補完候補を確定できるようにする
+  // → Emmetやコード補完を多用する人向け
+  "editor.tabCompletion": "on",
+
+  // スニペット候補を補完リストの最上位に表示
+  // → 定型文・チームスニペットを優先
+  "editor.snippetSuggestions": "top",
+
+  // Emmetの省略記法をTabキーで展開
+  "emmet.triggerExpansionOnTab": true,
+
+  // 入力中に自動で補完候補を表示
+  "editor.quickSuggestions": {
+    // 通常コード中の補完
+    "other": true,
+    // コメント中は補完しない（誤爆防止）
+    "comments": false,
+    // 文字列内では補完を有効（パス・キー入力向け）
+    "strings": true
+  },
+
+  // スニペット入力中でも他の補完候補を表示
+  // → スニペットに縛られず柔軟に補完を使う
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // 「.」「>」などのトリガー文字入力時に補完を自動表示
+  "editor.suggestOnTriggerCharacters": true,
+
+  // Enterキーで補完候補を確定
+  // → "smart" よりも確実に補完を採用
+  "editor.acceptSuggestionOnEnter": "on",
+
+  // Copilot風のインライン補完（次の一文予測）
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // 保存時に自動フォーマット
+  // → コード整形を人の意識から切り離す
+  "editor.formatOnSave": true,
+
+  // デフォルトのフォーマッタを Prettier に統一
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // =====================================================
+  // Files（保存動作）
+  // =====================================================
+
+  // フォーカスが別ウィンドウに移ったときに自動保存
+  // → 保存忘れ防止・集中力維持
+  "files.autoSave": "onFocusChange",
+
+  // =====================================================
+  // Markdown 関連
+  // =====================================================
+
+  // Markdownで画像を貼り付けた際の保存先ルール
+  // → ドキュメント名ごとに画像を整理
+  "markdown.copyFiles.destination": {
+    "**/*.md": "./img/img_${documentBaseName}/${documentBaseName}_${fileName}"
+  },
+
+  // markdown-pdf でヘッダー・フッターを有効化
+  "markdown-pdf.displayHeaderFooter": true,
+
+  // ヘッダーを空にしてフッターのみ使用
+  "markdown-pdf.headerTemplate": "<span></span>",
+
+  // =====================================================
+  // 拡張機能固有設定
+  // =====================================================
+
+  // draw.io（hediet.vscode-drawio）
+  // 画像リサイズ挙動は拡張のデフォルトに任せる
+  "hediet.vscode-drawio.resizeImages": null,
+
+  // Project Manager：プロジェクト分類タグ
+  // → 案件 / 部署活動 / 個人作業を明確に分離
+  "projectManager.tags": [
+    "案件", // 対外・プロジェクト・受託
+    "チーム", // 部署活動・横断チーム
+    "仕事", // 個人が担当する業務
+    "個人", // 私用・個人開発
+    "勉強", // 学習・研修
+    "試作", // PoC・検証・プロトタイプ
+    "一時" // 一時保存・使い捨て
+  ]
+}
